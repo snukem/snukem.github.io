@@ -1,4 +1,4 @@
-# Add Authors here
+---
 Spencer:
    name: Spencer Newcomb
    username: snewcomb
@@ -19,3 +19,4 @@ Spencer:
       #   url: "https://www.twitter.com/johndoe"
       # - title: "medium"
       #   url: "https://medium.com/johndoe"
+---

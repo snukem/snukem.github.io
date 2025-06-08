@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Welcome to 'The Rabbit Hole'!"
-summary: "My first blog post! Introspection and motivations."
+summary: "My first blog post! Introspection and motivations for my current goals."
 author: Spencer Newcomb
-category: thinking, reflection, jobs
+category: ['introspection', 'motivation', 'jobs', 'goals', 'about']
 thumbnail: /assets/img/posts/code.jpg
 keywords: data, learning, jobs, goals, opportunity
 permalink: /blog/welcome-to-the-rabbit-hole
