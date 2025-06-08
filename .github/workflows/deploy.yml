@@ -28,9 +28,6 @@ jobs:
         id: set-output
         run: echo "::set-output name=target::${{ env.TARGET }}"
 
-  # not sure if anyone wants this but I'm putting this here for those that don't
-  # want to host their site. else the actions will show an annoying x whenever
-  # you push to master
   deploy-none:
     runs-on: ubuntu-latest
     needs: set-deploy-type
@@ -42,16 +39,33 @@ jobs:
     runs-on: ubuntu-latest
     needs: set-deploy-type
     if: needs.set-deploy-type.outputs.target == 'gh-pages'
+    environment:
+      name: github-pages # Required for GitHub Pages deployments
+      url: ${{ steps.deployment.outputs.page_url }} # This will link to your deployed site
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout your repository
+        uses: actions/checkout@v4
 
-      - name: Deploy Jekyll Site
-        uses: sujaykundu777/jekyll-deploy-action@1.0.5
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-          GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
+      - name: Setup Ruby
+        # Use a specific Ruby version that matches your local environment (from Gemfile.lock)
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4' # Matches your Gemfile.lock's Ruby version
+          bundler-cache: true # Caches and installs gems based on Gemfile.lock
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build # This runs Jekyll using your installed gems
+
+      - name: Upload Pages artifact
+        # This action takes the '_site' directory (Jekyll's output) and prepares it for deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site'
+
+      - name: Deploy to GitHub Pages
+        id: deployment # Gives this step an ID to reference its outputs
+        uses: actions/deploy-pages@v4 # The official GitHub Pages deployment action
 
   deploy-firebase:
     runs-on: ubuntu-latest
