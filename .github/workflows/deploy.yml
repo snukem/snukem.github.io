@@ -24,7 +24,7 @@ jobs:
 
       - name: set output to deploy target
         id: set-output
-        run: echo "::set-output name=target::${{ env.TARGET }}"
+        run: echo "target=${{ env.TARGET }}" >> $GITHUB_OUTPUT
 
   deploy-none:
     runs-on: ubuntu-latest
