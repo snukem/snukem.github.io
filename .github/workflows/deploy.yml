@@ -22,8 +22,6 @@ jobs:
         if: success() && !contains(fromJSON('["gh-pages", "firebase", "none"]'), env.TARGET)
         run: echo 'Invalid Deployment Target' && exit 1
 
-      # gh actions doesn't support using the 'env' context on job level ifs for
-      # some reason smh. here we use outputs instead
       - name: set output to deploy target
         id: set-output
         run: echo "::set-output name=target::${{ env.TARGET }}"
@@ -40,32 +38,54 @@ jobs:
     needs: set-deploy-type
     if: needs.set-deploy-type.outputs.target == 'gh-pages'
     environment:
-      name: github-pages # Required for GitHub Pages deployments
-      url: ${{ steps.deployment.outputs.page_url }} # This will link to your deployed site
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout your repository
         uses: actions/checkout@v4
 
       - name: Setup Ruby
-        # Use a specific Ruby version that matches your local environment (from Gemfile.lock)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.3.4' # Matches your Gemfile.lock's Ruby version
-          bundler-cache: true # Caches and installs gems based on Gemfile.lock
+          ruby-version: '3.3.4'
+          bundler-cache: true
+
+      # --- DEBUGGING STEPS START HERE ---
+      - name: Debug: Show current directory and its contents before build
+        run: |
+          echo "Current working directory: $(pwd)"
+          echo "Files and directories in current working directory:"
+          ls -F
+          echo "--- End of pre-build directory listing ---"
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build # This runs Jekyll using your installed gems
+        # Adding --trace and --verbose to get more detailed output in case of failure
+        run: bundle exec jekyll build --trace --verbose
+
+      - name: Debug: Show contents of current directory and _site after build
+        run: |
+          echo "Current working directory after build: $(pwd)"
+          echo "Files and directories in current working directory after build:"
+          ls -F
+          echo "--- Checking for _site directory ---"
+          if [ -d "_site" ]; then
+            echo "_site directory exists. Contents:"
+            ls -F _site/
+          else
+            echo "_site directory DOES NOT exist."
+          fi
+          echo "--- End of post-build directory listing ---"
+      # --- DEBUGGING STEPS END HERE ---
 
       - name: Upload Pages artifact
-        # This action takes the '_site' directory (Jekyll's output) and prepares it for deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_site'
+          path: './_site' # This path MUST exist after the build step
 
       - name: Deploy to GitHub Pages
-        id: deployment # Gives this step an ID to reference its outputs
-        uses: actions/deploy-pages@v4 # The official GitHub Pages deployment action
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   deploy-firebase:
     runs-on: ubuntu-latest
@@ -89,6 +109,6 @@ jobs:
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+          env:
+            FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+            PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
