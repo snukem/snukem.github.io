@@ -302,6 +302,7 @@ DEPENDENCIES
   csv
   faraday-retry
   github-pages
+  jekyll (~> 3.10)
   jekyll-feed (~> 0.17.0)
   jekyll-gist (~> 1.5.0)
   jekyll-paginate (~> 1.1.0)
