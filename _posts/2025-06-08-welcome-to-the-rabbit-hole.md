@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to 'The Rabbit Hole'!"
-summary: "My first blog post for 'The Rabbit Hole'"
+summary: "My first blog post! Introspection and motivations."
 author: Spencer Newcomb
 category: thinking, reflection, jobs
 thumbnail: /assets/img/posts/code.jpg
