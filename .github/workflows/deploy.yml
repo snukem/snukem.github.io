@@ -40,7 +40,9 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
+    permissions:
+      id-token: write # This is the new line you need
+      pages: write # Also need pages: write for deployment
     steps:
       - name: Checkout your repository
         uses: actions/checkout@v4
