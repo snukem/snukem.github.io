@@ -1,9 +1,9 @@
-title: devlopr
+title: Spencer Newcomb
 subtitle: A Portfolio Jekyll Theme Built for Developers
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
-url: "" # the base hostname & protocol for your site, e.g. https://example.github.io
+url: "https://snukem.github.io" # the base hostname & protocol for your site, e.g. https://example.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Navigation
@@ -16,8 +16,8 @@ urls:
       url: /blog
     - text: Gallery
       url: /gallery
-    - text: Shop
-      url : /shop
+#     - text: Shop
+#       url : /shop
     - text: Contact
       url : /contact
 
@@ -25,23 +25,24 @@ urls:
 # Edit Author details (For multi authors check _data/authors.yml)
 
 author_logo: profile.png
-author: John Doe
-author_bio: Hi, my name is John Doe. I built this site using devlopr-jekyll :D
-author_email: "mail@sujaykundu.com"
-author_location: India
-author_website_url: "https://sujaykundu.com"
-typewrite-text: devlopr is a jekyll framework built for developers. You can edit this in _config.yml file
+author: Spencer Newcomb
+author_bio: I currently live in Arizona, and work remotely for Zions Bancorporation within their Model Risk Management department. 
+
+author_email: "spencenewcomb08@gmail.com"
+author_location: Arizona
+author_website_url: ""
+typewrite-text: I believe in hard work and not in sitting by the fire spinning fine theories
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
 # Experiences
 author_work_experiences:
-            - company_name: Google
+            - company_name: Zions Bancorporation
               company_logo: google.png
               company_url: https://google.com
-              designation: Software Engineer
+              designation: Model Risk Analyst III
               description: Worked on various Google Products
               visibility: true
-            - company_name: Microsoft
+            - company_name: Brigham Young University (Provo)
               company_logo: microsoft.png
               company_url: https://microsoft.com
               designation: Azure Developer
@@ -51,7 +52,7 @@ author_work_experiences:
 # Education
 author_education_details:
               - college_logo: mit.png
-                college_name: MIT
+                college_name: BYU (Provo)
                 college_url: https://mit.org
                 college_degree: CS Engineer
                 description: Bachelor of Technology
