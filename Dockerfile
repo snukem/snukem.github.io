@@ -30,3 +30,5 @@ ARG build_command
 ENV BUILD_COMMAND ${build_command}
 
 CMD ${BUILD_COMMAND}
+
+# EXPOSE 4000
