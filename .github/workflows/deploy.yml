@@ -41,7 +41,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    steps: # This 'steps:' must be correctly indented under 'deploy-gh-pages:'
+    steps:
       - name: Checkout your repository
         uses: actions/checkout@v4
 
@@ -52,7 +52,7 @@ jobs:
           bundler-cache: true
 
       # --- DEBUGGING STEPS START HERE ---
-      - name: Debug - Before build directory listing # Simplified name
+      - name: Debug - Show current directory and its contents before build
         run: |
           echo "Current working directory: $(pwd)"
           echo "Files and directories in current working directory:"
@@ -60,9 +60,10 @@ jobs:
           echo "--- End of pre-build directory listing ---"
 
       - name: Build Jekyll site
+        # Adding --trace and --verbose to get more detailed output in case of failure
         run: bundle exec jekyll build --trace --verbose
 
-      - name: Debug - After build directory listing # Simplified name
+      - name: Debug - Show contents of current directory and _site after build
         run: |
           echo "Current working directory after build: $(pwd)"
           echo "Files and directories in current working directory after build:"
@@ -80,7 +81,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './_site'
+          path: './_site' # This path MUST exist after the build step
 
       - name: Deploy to GitHub Pages
         id: deployment
@@ -108,6 +109,6 @@ jobs:
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
-          env:
+        env:
             FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
             PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
