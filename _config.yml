@@ -1,5 +1,5 @@
 title: Spencer Newcomb
-subtitle: A Portfolio Jekyll Theme Built for Developers
+subtitle: Data enjoyer with a strong background in statistical science
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
@@ -24,9 +24,9 @@ urls:
 
 # Edit Author details (For multi authors check _data/authors.yml)
 
-author_logo: profile.png
+author_logo: snewcomb.png
 author: Spencer Newcomb
-author_bio: I currently live in Arizona, and work remotely for Zions Bancorporation within their Model Risk Management department. 
+author_bio: I currently live in Arizona, and work remotely for Zions Bancorporation Model Risk Management. 
 
 author_email: "spencenewcomb08@gmail.com"
 author_location: Arizona
@@ -37,25 +37,25 @@ hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg.
 # Experiences
 author_work_experiences:
             - company_name: Zions Bancorporation
-              company_logo: google.png
-              company_url: https://google.com
+              company_logo: z-logo.png
+              company_url: https://zionsbancorporation.com
               designation: Model Risk Analyst III
-              description: Worked on various Google Products
+              description: Conduct comprehensive model validations and annual reviews according to pertinent regulatory guidelines.
               visibility: true
             - company_name: Brigham Young University (Provo)
-              company_logo: microsoft.png
-              company_url: https://microsoft.com
-              designation: Azure Developer
-              description: Worked on various Azure Cloud Products
+              company_logo: byu-logo.png
+              company_url: https://statistics.byu.edu/
+              designation: Graduate Research Assistant
+              description: Developed MCMC methods for efficient sampling from Bayesian non-parametric mixture models.
               visibility: true
 
 # Education
 author_education_details:
-              - college_logo: mit.png
+              - college_logo: byu-logo.png
                 college_name: BYU (Provo)
-                college_url: https://mit.org
-                college_degree: CS Engineer
-                description: Bachelor of Technology
+                college_url: https://statistics.byu.edu/
+                college_degree: M.S. Statistics
+                description: 2015-2020
                 visibility: true
 
 # Projects
