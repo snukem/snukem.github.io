@@ -1,21 +1,21 @@
 # Add Authors here
 snewcomb:
-   name: Spencer Newcomb
-   username: snewcomb
-   site: https://spencernewcomb.com
-   avatar: snewcomb.png
-   bio: "Husband, father, and data enjoyer."
-   email: spencenewcomb08@gmail.com
-   social:
-      - title: "github"
-        url: "https://github.com/snukem"
-      - title: "linkedin"
-        url: "https://www.linkedin.com/in/snewcomb95"
-      # - title: "youtube"
-      #   url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
-      # - title: "facebook"
-      #   url: "https://www.facebook.com/johndoe"
-      # - title: "twitter"
-      #   url: "https://www.twitter.com/johndoe"
-      # - title: "medium"
-      #   url: "https://medium.com/johndoe"
+  name: Spencer Newcomb
+  username: snewcomb
+  site: https://spencernewcomb.com
+  avatar: snewcomb.png
+  bio: "Husband, father, data enjoyer."
+  email: spencenewcomb08@gmail.com
+  social:
+    - title: "github"
+      url: "https://github.com/snukem"
+    - title: "linkedin"
+      url: "https://www.linkedin.com/in/snewcomb95"
+    # - title: "youtube"
+    #   url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
+    # - title: "facebook"
+    #   url: "https://www.facebook.com/johndoe"
+    # - title: "twitter"
+    #   url: "https://www.twitter.com/johndoe"
+    # - title: "medium"
+    #   url: "https://medium.com/johndoe"

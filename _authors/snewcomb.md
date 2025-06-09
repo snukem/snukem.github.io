@@ -3,7 +3,7 @@ name: Spencer Newcomb
 username: snewcomb
 site: https://spencernewcomb.com
 avatar: snewcomb.png
-bio: "Husband, father, and data enjoyer."
+bio: "Husband, father, data enjoyer."
 email: spencenewcomb08@gmail.com
 social:
   - title: "github"

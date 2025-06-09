@@ -1,5 +1,5 @@
 title: Spencer Newcomb
-subtitle: Husband, father, and data enjoyer.
+subtitle: Husband, father, data enjoyer.
 description: >- # this means to ignore newlines until "baseurl:"
   devlopr-jekyll is a beautiful Jekyll Theme Built For Developers, which is optimized for speed and readability.
 
@@ -15,7 +15,7 @@ urls:
     - text: Blog
       url: /blog
     - text: Projects
-      url: /gallery
+      url: /projects
 #     - text: Shop
 #       url : /shop
     - text: Contact
@@ -26,7 +26,7 @@ urls:
 
 author_logo: snewcomb.png
 author: Spencer Newcomb
-author_bio: Husband, father, data enjoyer.
+author_bio: I currently work in Model Risk Management for Zions Bancorporation (2020-present). I enjoy extracting meaning and insight from data and building models that reflect this understanding.
 
 author_email: "spencenewcomb08@gmail.com"
 author_location: Arizona
