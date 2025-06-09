@@ -60,16 +60,21 @@ author_education_details:
 
 # Projects
 author_project_details:
-              - project_thumbnail: gamershub.png
-                project_title: Gamers Hub
-                project_description: A Platform built for Gamers and Game Devs
-                project_url: https://gamershub.in
+              - project_thumbnail: jscs.png
+                project_title: Sequentially Allocated Merge-Split Samplers
+                project_description: Research publication and R package for a novel approach to MCMC sampling for Bayesian non-parametric mixture models.
+                project_url: 
+                        - url: https://doi.org/10.1080/00949655.2021.1998502
+                          name: Article
+                        - url: https://cran.r-project.org/web/packages/sams/index.html
+                          name: R Package
                 visibility: true
-              - project_thumbnail: hack4r.PNG
-                project_title: Hack4r
-                project_description: A Platform built for Hackers and Penetration Testers
-                project_url: https://hack4r.com
-                visibility: true
+              # - project_thumbnail: hack4r.PNG
+              #   project_title: Hack4r
+              #   project_description: A Platform built for Hackers and Penetration Testers
+              #   project_url: https://hack4r.com
+              #   project_url_name: https://hack4r.com
+              #   visibility: true
 
 # social links
 # twitter_username: 
