@@ -156,7 +156,7 @@ defaults:
       type: authors
     values:
       layout: author
-      permalink: /blog/authors/:slug
+      permalink: /blog/authors/snewcomb
   -
     scope:
       path: 'assets/**'
@@ -240,4 +240,4 @@ exclude:
   - assets/bower_components/imagesloaded/README.md
 
 
-destination: ./build
+destination: ./_site
