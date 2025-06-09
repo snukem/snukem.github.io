@@ -26,11 +26,11 @@ urls:
 
 author_logo: snewcomb.png
 author: Spencer Newcomb
-author_bio: I currently live in Arizona, and work remotely for Zions Bancorporation Model Risk Management. 
+author_bio: Husband, father, data enjoyer.
 
 author_email: "spencenewcomb08@gmail.com"
 author_location: Arizona
-author_website_url: ""
+# author_website_url: ""
 typewrite-text: I believe in hard work and not in sitting by the fire spinning fine theories
 hero_cover_img: sample_cover.jpg # replace this for changing homepage cover (eg. try cover.jpeg). Image should be in /assets/img
 
@@ -151,7 +151,7 @@ defaults:
       type: authors
     values:
       layout: author
-      permalink: /blog/authors/:slug
+      permalink: /blog/authors/snewcomb
   -
     scope:
       path: 'assets/**'
