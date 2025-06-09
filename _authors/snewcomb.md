@@ -8,9 +8,9 @@ Spencer:
    email: spencenewcomb08@gmail.com
    social:
       - title: "github"
-        url: "https://github.com/johndoe"
+        url: "https://github.com/snukem"
       - title: "linkedin"
-        url: "https://www.linkedin.com/in/johndoe"
+        url: "https://www.linkedin.com/in/snewcomb95"
       # - title: "youtube"
       #   url: "https://www.youtube.com/channel/UCSfLBFFfNU9r6ihfei6VeJw"
       # - title: "facebook"
