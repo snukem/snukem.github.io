@@ -34,20 +34,60 @@ jobs:
       - run: echo 'No Deployment Specified' && exit 0
 
   deploy-gh-pages:
-      runs-on: ubuntu-latest
-      needs: set-deploy-type
-      if: needs.set-deploy-type.outputs.target == 'gh-pages'
-  
-      steps:
-        - uses: actions/checkout@v4
-  
-        - name: Deploy Jekyll Site
-          uses: sujaykundu777/jekyll-deploy-action@1.0.5
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
-            GITHUB_ACTOR: ${{ secrets.GITHUB_ACTOR }}
-     
+    runs-on: ubuntu-latest
+    needs: set-deploy-type
+    if: needs.set-deploy-type.outputs.target == 'gh-pages'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      id-token: write # This is the new line you need
+      pages: write # Also need pages: write for deployment
+    steps:
+      - name: Checkout your repository
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4'
+          bundler-cache: true
+
+      # --- DEBUGGING STEPS START HERE ---
+      - name: Debug - Show current directory and its contents before build
+        run: |
+          echo "Current working directory: $(pwd)"
+          echo "Files and directories in current working directory:"
+          ls -F
+          echo "--- End of pre-build directory listing ---"
+
+      - name: Build Jekyll site
+        # Adding --trace and --verbose to get more detailed output in case of failure
+        run: bundle exec jekyll build --trace --verbose
+
+      - name: Debug - Show contents of current directory and _site after build
+        run: |
+          echo "Current working directory after build: $(pwd)"
+          echo "Files and directories in current working directory after build:"
+          ls -F
+          echo "--- Checking for _site directory ---"
+          if [ -d "_site" ]; then
+            echo "_site directory exists. Contents:"
+            ls -F _site/
+          else
+            echo "_site directory DOES NOT exist."
+          fi
+          echo "--- End of post-build directory listing ---"
+      # --- DEBUGGING STEPS END HERE ---
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './_site' # This path MUST exist after the build step
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
   deploy-firebase:
     runs-on: ubuntu-latest
