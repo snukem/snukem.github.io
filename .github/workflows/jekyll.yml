@@ -47,9 +47,9 @@ jobs:
         run: |
           # sets 
           sed -i "s|SOOPR_PUBLISH_TOKEN_PLACEHOLDER|$SOOPR_SECRET|g" _config.yml
-      - name: DEBUG sed command
-        run: |
-          sed -n '40,43p' _config.yml
+      # - name: DEBUG sed command
+      #   run: |
+      #     sed -n '40,43p' _config.yml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
