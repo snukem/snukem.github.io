@@ -19,7 +19,7 @@ Hi I'm Spencer! I currently work in Model Risk Management for Zions Bancorporati
 
 - Collaborate with Model Risk Director to align team priorities, assess capacity, balance workloads, and coordinate new initiatives.
 - Conduct regular 1-on-1s with direct reports to manage and support individual project progress.
-- Perform tasks required by Model Risk Analysts, as described below.
+- Perform tasks required of Model Risk Analysts, as described below.
 
 **Model Risk Analyst (2020 - 2025)**
 
@@ -36,8 +36,8 @@ Hi I'm Spencer! I currently work in Model Risk Management for Zions Bancorporati
 **Graduate Research Assistant (2018 - 2020)**
 
 - Developed MCMC methods for efficient sampling from Bayesian nonparametric mixture models.
-- Co-authored "Sequentially allocated merge-split samplers for conjugate Bayesian nonparametric models", published in 2021 in the Journal of Statistical Computation and Simulation.
-- Wrote the R package "sams" with reference implementations for the methods described in this paper.
+- Co-authored ["Sequentially allocated merge-split samplers for conjugate Bayesian nonparametric models"](https://doi.org/10.1080/00949655.2021.1998502), published in 2021 in the Journal of Statistical Computation and Simulation.
+- Wrote the R package [sams](https://cran.r-project.org/web/packages/SAM/index.html) with reference implementations for the methods described in this paper.
 
 
 ## Education
