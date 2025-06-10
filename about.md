@@ -5,7 +5,7 @@ title: About
 
 ---
 
-Hi I'm Spencer! I currently work in Model Risk Management for Zions Bancorporation (2020-present). I enjoy extracting meaning and insight from data and building models that reflect this understanding. 
+Hi I'm Spencer! My family and I live in Arizona, and I currently work remotely for Zions Bancorporation in Model Risk Management (2020-present). I enjoy extracting meaning and insight from data and building models that reflect this understanding. My extra-professional interests include volleyball, Rocket League, heavy metal music, game development, and singing.
 
 ![family picture](images/family.JPG)
 
