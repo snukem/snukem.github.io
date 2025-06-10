@@ -42,11 +42,11 @@ jobs:
           cache-version: 0 # Increment this number if you need to re-download cached gems
       # sets the publish token for soopr integration from actions env vars
       - name: Add SOOPR Token
+        env:
+          SOOPR_SECRET: ${{ secrets.SOOPR_PUBLISH_TOKEN }}
         run: |
           # sets 
-          sed -i "s|SOOPR_PUBLISH_TOKEN_PLACEHOLDER|${SOOPR_TOKEN_ENV_VAR}|g" _config.yml
-        env:
-          SOOPR_TOKEN_ENV_VAR: ${{ vars.SOOPR_PUBLISH_TOKEN }}
+          sed -i "s|SOOPR_PUBLISH_TOKEN_PLACEHOLDER|$SOOPR_SECRET|g" _config.yml
       - name: DEBUG sed command
         run: |
           sed -n '40,43p' _config.yml
