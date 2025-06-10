@@ -1,3 +1,6 @@
+## Disclaimer: 
+This repo is not "generated with developr-jekyll". It originally was, but then I restructured and templated from abhinavs/moonwalk but within the same name so github doesn't know otherwise.
+
 ## moonwalk - a fast and minimalistic blog theme with clean dark mode
 
 <img src="https://raw.githubusercontent.com/abhinavs/moonwalk/master/_screenshots/moonwalk.png" />
