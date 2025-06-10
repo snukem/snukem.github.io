@@ -39,7 +39,7 @@ theme_config:
     title_old_projects: Old Projects
 
 soopr:
-  publish_token: "pt_9eb46945a727c55251878761ec00b060" # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
+  publish_token:  # sign up at https://www.soopr.co to get your publish token and personalize share and reaction options
 
 highlighter: rouge
 
