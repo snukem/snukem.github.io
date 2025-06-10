@@ -47,9 +47,7 @@ jobs:
           sed -i 's|SOOPER_PUBLISH_TOKEN_PLACEHOLDER|${{ vars.SOOPER_PUBLISH_TOKEN}}|g' _config.yml
       - name: DEBUG sed command
         run: |
-          add-apt-repository ppa:rmescandon/yq
-          apt install yq -y
-          yq '.soopr.publish_token' _config.yaml
+          sed -n '40,43p' _config.yaml
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
