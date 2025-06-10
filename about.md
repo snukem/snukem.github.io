@@ -67,5 +67,3 @@ Hi I'm Spencer! I currently work in Model Risk Management for Zions Bancorporati
 ## Recent Programming Activity
 ---
 <figure><embed src="https://wakatime.com/share/@snukem/d3b3f646-8b00-480c-9a3a-c58bf64602b6.svg"></figure>
-
-<figure><embed src="https://wakatime.com/share/@snukem/bcde541c-0eb6-409e-b1fb-73e75c4ede6a.svg"></figure>
