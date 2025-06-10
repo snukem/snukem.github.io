@@ -2,7 +2,7 @@ title: The Rabbit Hole
 author: Spencer Newcomb
 url: https://spencernewcomb.com # root address of the site
 description: > # description of the site (multiple lines allowed)
-  "The Rabbit Hole" is an online repository for both my blog and portfolio of projects related to statistics and data science. Most of the blog posts will be related to what I'm learning at that moment in time, and my projects will be self-contained approaches to particular problems. My mind may wander on sidequests at times, but for the most part this website will be focused on data-related topics.
+  Welcome! This is a hub for both my blog and portfolio of projects related to statistics and data science. Most of the blog posts are related to what I'm learning at that moment in time, and my projects are self-contained approaches to particular problems. My mind may wander on sidequests at times, but for the most part this website is focused on data-related topics.
 
 permalink: /:slug
 
