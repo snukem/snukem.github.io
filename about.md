@@ -7,7 +7,7 @@ title: About
 
 Hi I'm Spencer! I currently work in Model Risk Management for Zions Bancorporation (2020-present). I enjoy extracting meaning and insight from data and building models that reflect this understanding. 
 
-PUT A PICTURE HERE
+![family picture](images/family.JPG)
 
 ## Work Experience
 
