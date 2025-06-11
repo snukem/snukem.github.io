@@ -37,7 +37,7 @@ Hi I'm Spencer! My family and I live in Arizona, and I currently work remotely f
 
 - Developed MCMC methods for efficient sampling from Bayesian nonparametric mixture models.
 - Co-authored ["Sequentially allocated merge-split samplers for conjugate Bayesian nonparametric models"](https://doi.org/10.1080/00949655.2021.1998502), published in 2021 in the Journal of Statistical Computation and Simulation.
-- Wrote the R package [sams](https://cran.r-project.org/web/packages/SAM/index.html) with reference implementations for the methods described in this paper.
+- Wrote the R package [sams](https://cran.r-project.org/web/packages/sams/index.html) with reference implementations for the methods described in this paper.
 
 
 ## Education
