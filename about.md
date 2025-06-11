@@ -66,4 +66,7 @@ Hi I'm Spencer! My family and I live in Arizona, and I currently work remotely f
 
 ## Recent Programming Activity
 ---
+
+*Note: This does not include any programming done at my job*
+
 <figure><embed src="https://wakatime.com/share/@snukem/d3b3f646-8b00-480c-9a3a-c58bf64602b6.svg"></figure>
