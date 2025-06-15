@@ -82,7 +82,7 @@ I actually thought about these things a lot as a kid, and tried to find a balanc
 ![KOTOR BANNER](/images/kotor-banner.png)
 [(Image Source)](https://store.epicgames.com/en-US/news/star-wars-knights-of-the-old-republic-i-and-ii-available-for-free-on-the-epic-games-store-on-mobile)
 
-At this point you might be seriously asking yourself why I've brought up Knights of the Old Republic and its character creation process. This is a fair question, but in response I'll ask you to consider this: what areas of your life did you sink your time into before you were 18? Between 18-25? 25-34? What about now, if those eras trail behind you?
+At this point you might be seriously asking yourself why I've brought up *Star Wars: Knights of the Old Republic* and its character creation process. This is a fair question, but in response I'll ask you to consider this: what areas of your life did you sink your time into before you were 18? Between 18-25? 25-34? What about now, if those eras trail behind you?
 
 As a kid, I spent hours tinkering with character builds in games like this &mdash; balancing attributes, debating class choices, and trying to make someone who could do it all. Now at 30, I’m realizing how much that mirrors my own life: a "generalist" at heart trying to specialize in a world that increasingly rewards expertise.
 
