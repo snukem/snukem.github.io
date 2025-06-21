@@ -1,0 +1,13 @@
+{% comment %}
+  This include expects a 'file' variable, e.g., {% include audio_player.html file="my-file.mp3" %}
+  It can also optionally take a 'caption' variable.
+{% endcomment %}
+
+<figure class="audio-player">
+  <audio controls src="{{ site.baseurl }}/assets/audio/{{ include.file }}">
+    Your browser does not support the audio element.
+  </audio>
+  {% if include.caption %}
+    <figcaption>{{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}</figcaption>
+  {% endif %}
+</figure>
