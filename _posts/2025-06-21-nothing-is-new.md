@@ -5,7 +5,7 @@ summary: "The notes have already been played; the words have already been writte
 # author: Spencer Newcomb
 tags: [creativity, learning, thinking]
 keywords: new, ideas, creativity
-usemathjax: true
+mathjax: true
 ---
 
 **Mood:** Tired
