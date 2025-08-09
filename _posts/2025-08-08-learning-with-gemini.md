@@ -64,7 +64,7 @@ Below is a high-level breakdown of the progression of emerging models based fund
 
 In general, these models have become more useful and "better" due to a few key areas of improvement.
 
-1. **More Knowledge and Larger Parameter Sets**
+**More Knowledge and Larger Parameter Sets**
 
 GPT-1 was trained on a corpus of about 7,000 texts/books that likely added up to be in the realm of 
 6-10GB of total training data. That's a lot of books, but consider this: GPT-2, which is now nearly 6 years 
@@ -74,19 +74,19 @@ deduplication and other filtering mechanisms.
 
 Similarly, the parameter space these models are exploring is astronomically large. Scaling tenfold from GPT-1 to 2 to 3, each, it is posited by some that GPT-4 consists of anywhere between 1.5 to 2.0 Trillion model parameters, suggesting training data on the order of 20+ TB - but at this point we're just speculating. The take-home is that extremely new models like Claude Opus 4.1 and GPT-5 are barely fathomably large - probably on the order of 10-20 Trillion model parameters and 20x that in bytes of training data. Their knowledge base is essentially equal to that of all the unique text passages in the accessible internet.
 
-2. **Instruction-Tuning & Reinforcement Learning from Human Feedback (RLHF)**
+**Instruction-Tuning & Reinforcement Learning from Human Feedback (RLHF)**
 
 [RLHF](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback) is a state-of-the-art mechanism for curating training data for language models and other generative tools to mechanistically reward models for producing responses that are similar to actual human responses to prompts provided by real humans. This is essentially what I do for my freelance gig - I write a prompt, the model provides two responses, and I rate/score the responses based on various axes of quality and sometimes even edit the responses to "teach" the model how the correct answer should look and why/how it's different from the one it gave. 
 
-3. **Multi-Modal Capabilities**
+**Multi-Modal Capabilities**
 
 All this means is that instead of strictly being good at producing reasonable language responses, the model construction also provides image, video, or audio generation capabilities. Essentially this becomes possible as the parameter space for the model increases and its weights have the flexibility to produce even more types of output. Basically any top-of-line model released after 2023 has this capability. 
 
-4. **Expanded Context Window**
+**Expanded Context Window**
 
 Novel approaches to attention mechanisms, scaled-up hardware, and other efficiency gains in model architecture now allow for huge [context windows](https://www.ibm.com/think/topics/context-window) compared to early models. Whereas GPT-3 only allowed for 2048 tokens in its context window, most state-of-the-art implementations offer at least 128k-256k token context windows. Google's Gemini 2.5 Pro released with a 1M token context window, and Meta's Llama 4 - Scout claims to efficiently boast a 10M token context window. These improvements essentially allow for more effective long conversations and long document parsing.
 
-4. **Mixture-of-Experts Approach**
+**Mixture-of-Experts Approach**
 
 By 2025 many of these models implemented a [Mixture-of-Experts (MoE)](https://huggingface.co/blog/moe) approach, which essentially provides a mechanism to efficiently route prompt tokens through a hierarchy of model structures and generate content based on that context with potentially only a portion of the entire parent model's parameter set. I'm not an expert on this subject, but this is how I understand it.
 
