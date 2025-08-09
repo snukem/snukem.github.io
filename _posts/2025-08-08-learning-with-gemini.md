@@ -16,23 +16,24 @@ opportunity originally for the simple reason to bring in a bit more cash, and th
 work for was ready to pay $40/hr for coding work. It has been a great blessing to our family, and to 
 be honest I should probably be taking more advantage of the opportunity while it lasts.
 
-You may be thinking I hopped on a train to teach bots how to take my job, but after 18 months of 
+You may be thinking I hopped on a train to teach bots how to take my job. They’re becoming incredibly powerful, yes, but the existential threat to our way of life may not be what you think. After 18 months of 
 carefully assessing the quality of model-generated responses to hundreds of different questions, I 
-can tell you two things: (1) they are getty _really_ good at pretty much everything that
+can tell you two things: (1) they are getting _really_ good at pretty much everything that
 can be learned through sheer absorption of knowledge and computational implementation, and (2) they
 won't be taking your (or my) job anytime soon unless you don't adapt to the emerging tech and learn
-to work alongside these tools. 
+to work alongside these tools. They are in no way generally intelligent entities, and if anything you
+should just become more effective at what you currently do with them at your fingertips.
 
 ![nn-traffic](/images/nn-traffic.png)
 
-At the end of the day, that's what these current models are: tools to synthesize massive amounts of content to
+At the end of the day, that's what these models are: tools to synthesize massive amounts of content to
 produce more content that is linguistically-structured at its core. Programming, summarization of text, parsing
 of PDFs to extract insight and metrics, learning how to arrange pixels on a screen to produce images and
 sequences of images (AKA videos), etc. are all fundamentally language-driven tasks. Even images when 
 seen as patterned sequences of color values can be easily interpreted as a form of structured language.
 
 The image below outlines the basic architecture of an early generative pre-trained (GPT) language model, the GPT-1 model. 
-This is extremely small compared to nmodern models, but I would assert that newer models don't have any fundamentally revolutionary
+This is extremely small compared to modern models, but I would assert that newer models don't have any fundamentally revolutionary
 new components in their architecture that have the ability to overcome their inability to exhibit
 true intelligence. More on that later.
 
@@ -63,7 +64,7 @@ Below is a high-level breakdown of the progression of emerging models based fund
 
 In general, these models have become more useful and "better" due to a few key areas of improvement.
 
-1. **More Knowledge and Larged Parameter Sets**
+1. **More Knowledge and Larger Parameter Sets**
 
 GPT-1 was trained on a corpus of about 7,000 texts/books that likely added up to be in the realm of 
 6-10GB of total training data. That's a lot of books, but consider this: GPT-2, which is now nearly 6 years 
@@ -83,7 +84,7 @@ All this means is that instead of strictly being good at producing reasonable la
 
 4. **Expanded Context Window**
 
-Novel approaches to attention mechanisms, scaled-up hardware, and other efficiency gains in model architeture now allow for huge [context windows](https://www.ibm.com/think/topics/context-window) compared to early models. Whereas GPT-3 only allowed for 2048 tokens in its context window, most state-of-the-art implementations offer at least 128k-256k token context windows. Google's Gemini 2.5 Pro released with a 1M token context window, and Meta's Llama 4 - Scout claims to efficiently boast a 10M token context window. These improvements essentially allow for more effective long conversations and long document parsing.
+Novel approaches to attention mechanisms, scaled-up hardware, and other efficiency gains in model architecture now allow for huge [context windows](https://www.ibm.com/think/topics/context-window) compared to early models. Whereas GPT-3 only allowed for 2048 tokens in its context window, most state-of-the-art implementations offer at least 128k-256k token context windows. Google's Gemini 2.5 Pro released with a 1M token context window, and Meta's Llama 4 - Scout claims to efficiently boast a 10M token context window. These improvements essentially allow for more effective long conversations and long document parsing.
 
 4. **Mixture-of-Experts Approach**
 
@@ -119,9 +120,9 @@ extremely limited exposure to &mdash; or ability to take advantage of &mdash; pu
 
 ![arc-agi-table](/images/arc-agi-table.png)
 
-Training models to complete these tasks in similar ways that humans would, if it's even remotely possible, inevitably requires a different architectural approach to model design. Attempts at this shift in design have not been particularly effective up to this point, but (ironically) human ingenuinity is without boundary. While the shiniest new LLMs struggle to produce a fraction of the performance that human panels can, what fundamental changes can be ushered in to bring _true_ reasoning and intelligence capabilities to these computers. They are currently good for many things, which makes them extremely useful tools - but they are not intelligent. 
+Training models to complete these tasks in similar ways that humans would, if it's even remotely possible, inevitably requires a different architectural approach to model design. Attempts at this shift in design have not been particularly effective up to this point, but (ironically) human ingenuity is without boundary. While the shiniest new LLMs struggle to produce a fraction of the performance that human panels can, what fundamental changes can be ushered in to bring _true_ reasoning and intelligence capabilities to these computers. They are currently good for many things, which makes them extremely useful tools - but they are not intelligent. 
 
-The question of the physical possibility that human-created computational machines can even approach general intelligence has been debated for decades now. The hypemen claim we are on the brink of it, but I don't think so. I can't say I believe it's even possible. Here are some sources on the topic:
+The question of the physical possibility that human-created computational machines can even approach general intelligence has been debated for decades now. The hype men claim we are on the brink of it, but I don't think so. I can't say I believe it's even possible. Here are some sources on the topic:
 
 * [AGI](https://builtin.com/artificial-intelligence/artificial-general-intelligence)
 
