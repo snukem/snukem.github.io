@@ -62,7 +62,7 @@ Hi I'm Spencer! My family and I live in Arizona, and I currently work remotely f
 
 #### Learning
 
-**PowerBI**, **C#**, **Scala**, **HTML**, **CSS**, **D3.js**
+**PowerBI**, **C#**, **Scala**, **HTML**, **CSS**, **D3.js**, **Rust**
 
 ## Recent Programming Activity
 ---
