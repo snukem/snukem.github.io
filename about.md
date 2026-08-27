@@ -52,17 +52,11 @@ Hi I'm Spencer! My family and I live in Arizona, and I currently work remotely f
 ## Software Proficiencies
 ---
 
-#### Great
-
-**R**
-
-#### Good
-
-**Python**, **SQL**, **Excel**, **SAS**, **LaTeX**
+**R**, **Python**, **SQL**, **Excel**, **SAS**, **LaTeX**, **PowerBI**
 
 #### Learning
 
-**PowerBI**, **C#**, **Scala**, **HTML**, **CSS**, **D3.js**, **Rust**
+**C#**, **Scala**, **HTML**, **CSS**, **D3.js**, **Rust**
 
 ## Recent Programming Activity
 ---
